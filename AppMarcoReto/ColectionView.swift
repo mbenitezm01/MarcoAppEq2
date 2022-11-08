@@ -10,82 +10,71 @@ import SwiftUI
 struct ColectionView: View {
     var body: some View {
         VStack{
-            HStack{
-                Button(action: {
-                    
-                    }, label: {
-                        Text("Preguntas sobre las obras")
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .lineLimit(2)
-                            .padding()
-                            .scaledToFit()
-                            .background(Color.brown)
-                            .cornerRadius(10)
-                            .shadow(radius: 10)
-                            
-                            
-                    })
-                Button(action: {
-                    print("Respuesta Equivocada")
-                    }, label: {
-                        Text("Actividades Interactivas")
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .lineLimit(2)
-                            .padding()
-                            .scaledToFit()
-                            .background(Color.brown)
-                            .cornerRadius(10)
-                            .shadow(radius: 10)
-                            
+            
+            Text("Obras ")
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .lineLimit(2)
+                .padding()
+                .frame(width: 500.0)
+                .scaledToFit()
+                .background(Color.brown)
+                .cornerRadius(10)
+                .shadow(radius: 10)
+            
+            ScrollView(){
+                HStack{
 
-                            
-                    })
+                    Image("LadyLiberty")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                    Image("CasinoFilosofico")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                    Image("Guitarra")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                }
+                .padding()
+                HStack{
+                    Image("Stargazer")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                    Image("PlaceHolder")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                    Image("PlaceHolder")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                }
+                .padding()
+                HStack{
+                    Image("PlaceHolder")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                    Image("PlaceHolder")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                    Image("PlaceHolder")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                }
+                .padding()
+                HStack{
+                    Image("PlaceHolder")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                    Image("PlaceHolder")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                    Image("PlaceHolder")
+                        .resizable()
+                        .frame(width: 110.0, height: 110.0)
+                }
+                .padding()
+                
             }
-            .padding()
-            HStack{
-                Image("LibertyStatue")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 150)
-                Image("CasinoFilosofico")
-                    .resizable()
-                    .scaledToFit()
-                Image("Guitarra")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 150)
-            }
-            .padding()
-            HStack{
-                Image("LibertyStatue")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 150)
-                Image("CasinoFilosofico")
-                    .resizable()
-                    .scaledToFit()
-                Image("Guitarra")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 150)
-            }
-            .padding()
-            HStack{
-                Image("LibertyStatue")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 150)
-                Image("CasinoFilosofico")
-                    .resizable()
-                    .scaledToFit()
-                Image("Guitarra")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 150)
-            }
-            .padding()
+            
             
             
             
