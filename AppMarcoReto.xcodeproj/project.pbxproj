@@ -10,6 +10,8 @@
 		4B4C4427291AD46600F5A437 /* MarkPro-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B4C4426291AD45500F5A437 /* MarkPro-Book.otf */; };
 		4B4C4429291ADCE300F5A437 /* ObrasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C4428291ADCE300F5A437 /* ObrasModel.swift */; };
 		4B4C442D291AE09800F5A437 /* ObrasDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C442C291AE09800F5A437 /* ObrasDetailView.swift */; };
+		4B4C442F291AF31F00F5A437 /* ObrasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C442E291AF31F00F5A437 /* ObrasViewModel.swift */; };
+		4B4C4431291AF61100F5A437 /* ObrasItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C4430291AF61100F5A437 /* ObrasItemView.swift */; };
 		FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */; };
 		FBCC02C328F7301E00A9EA9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02C228F7301E00A9EA9D /* ContentView.swift */; };
 		FBCC02C528F7302000A9EA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCC02C428F7302000A9EA9D /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 		4B4C4426291AD45500F5A437 /* MarkPro-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Book.otf"; sourceTree = "<group>"; };
 		4B4C4428291ADCE300F5A437 /* ObrasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasModel.swift; sourceTree = "<group>"; };
 		4B4C442C291AE09800F5A437 /* ObrasDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasDetailView.swift; sourceTree = "<group>"; };
+		4B4C442E291AF31F00F5A437 /* ObrasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasViewModel.swift; sourceTree = "<group>"; };
+		4B4C4430291AF61100F5A437 /* ObrasItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasItemView.swift; sourceTree = "<group>"; };
 		FBCC02BD28F7301E00A9EA9D /* AppMarcoReto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMarcoReto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMarcoRetoApp.swift; sourceTree = "<group>"; };
 		FBCC02C228F7301E00A9EA9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			children = (
 				4B4C4428291ADCE300F5A437 /* ObrasModel.swift */,
 				4B4C442C291AE09800F5A437 /* ObrasDetailView.swift */,
+				4B4C442E291AF31F00F5A437 /* ObrasViewModel.swift */,
+				4B4C4430291AF61100F5A437 /* ObrasItemView.swift */,
 			);
 			path = Obras;
 			sourceTree = "<group>";
@@ -180,10 +186,12 @@
 			files = (
 				FBCC02D728F734D200A9EA9D /* ScanView.swift in Sources */,
 				FBCC02C328F7301E00A9EA9D /* ContentView.swift in Sources */,
+				4B4C442F291AF31F00F5A437 /* ObrasViewModel.swift in Sources */,
 				FBCC02D128F734A900A9EA9D /* HomeView.swift in Sources */,
 				4B4C4429291ADCE300F5A437 /* ObrasModel.swift in Sources */,
 				FBCC02CF28F7340100A9EA9D /* ActividadView.swift in Sources */,
 				FBCC02D528F734C700A9EA9D /* EventosView.swift in Sources */,
+				4B4C4431291AF61100F5A437 /* ObrasItemView.swift in Sources */,
 				4B4C442D291AE09800F5A437 /* ObrasDetailView.swift in Sources */,
 				FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */,
 				FBCC02D328F734BF00A9EA9D /* ExposView.swift in Sources */,
