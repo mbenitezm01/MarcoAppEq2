@@ -8,7 +8,9 @@
 import SwiftUI
 import ARKit
 import RealityKit
+import Combine
 
+/*
 struct RealityKitView: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
        let view = ARView()
@@ -37,10 +39,25 @@ struct RealityKitView: UIViewRepresentable {
     func updateUIView(_ view: ARView, context: Context) {
     }
 }
+ */
+
 
 struct ScanView: View {
     var body: some View {
-        RealityKitView()
+        ARViewContainer().edgesIgnoringSafeArea(.all)
+    }
+}
+
+struct ARViewContainer: UIViewControllerRepresentable {
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ARViewContainer>) -> ARViewController{
+        
+        let viewController = ARViewController()
+        return viewController
+        
+    }
+    
+    func updateUIViewController(_ uiViewController: ARViewController, context: UIViewControllerRepresentableContext<ARViewContainer>){
+        
     }
 }
 
