@@ -15,7 +15,7 @@ struct ObrasItemView: View {
         Image(obra.nombreImagen)
             .resizable()
             .scaledToFit()
-            .frame(width:150)
+            .frame(width:160)
             .overlay(alignment: .topLeading, content: {
                 Text(obra.titulo)
                     .font(.custom("MarkPro-Book", size: 20))

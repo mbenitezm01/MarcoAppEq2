@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var obrasVM = ObrasViewModel()
+    @StateObject var exposVM = ExposViewModel()
     var body: some View {
         NavigationView{
             ZStack{
@@ -19,33 +20,24 @@ struct HomeView: View {
                         .font(Font.custom("MarkPro-Book",size: 36))
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 20) { // HStack(spacing:20)
-                            ForEach(obrasVM.arrObras) { item in NavigationLink(destination:ObrasDetailView(obra: item),label:{ObrasItemView(obra:item)})
-                                /*Text("Obra \($0)")
-                                 .foregroundColor(.white)
-                                 .font(.largeTitle)
-                                 .frame(width: 200, height: 200)
-                                 .background(.red)*/
+                            ForEach(exposVM.arrExpos) { item in NavigationLink(destination:ExposDetailView(expo: item),label:{ExposItemView(expo:item)})
+                                
                             } // ForEach
                         } // HStack
                     } // ScrollView
                     Text("Eventos")
                         .font(Font.custom("MarkPro-Book",size: 36))
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 20) {
-                            ForEach(1..<4) {
-                                Text("Evento \($0)")
-                                    .font(Font.custom("MarkPro-Book",size: 36))
-                                    .foregroundColor(.white)
-                                    .font(.largeTitle)
-                                    .frame(width: 200, height: 200)
-                                    .background(.red)
+                        HStack(spacing: 20) { // HStack(spacing:20)
+                            ForEach(obrasVM.arrObras) { item in NavigationLink(destination:ObrasDetailView(obra: item),label:{ObrasItemView(obra:item)})
+                                
                             } // ForEach
                         } // HStack
                     } // ScrollView
                     
                 } // VStack
-            }//ZStack
-        }//NavigationView
+            } // ZStack
+        } // NavigationView
     }
 }
 
