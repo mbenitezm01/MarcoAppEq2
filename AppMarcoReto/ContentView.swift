@@ -30,9 +30,9 @@ struct ContentView: View {
                     Text("Scan")
                     Image(systemName: "house.fill")
                 }
-            ActividadView()
+            ColectionView()
                 .tabItem{
-                    Text("Interactivo")
+                    Text("Coleccion")
                     Image(systemName: "house.fill")
                 }
         }
