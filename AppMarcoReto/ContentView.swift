@@ -30,10 +30,11 @@ struct ContentView: View {
                     Text("Scan")
                     Image(systemName: "qrcode")
                 }
-            ActividadView()
+            ColectionView()
                 .tabItem{
                     Text("Coleccion")
                     Image(systemName: "photo.artframe")
+                    Image(systemName: "house.fill")
                 }
         }
     }
