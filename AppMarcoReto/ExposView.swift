@@ -9,7 +9,19 @@ import SwiftUI
 
 struct ExposView: View {
     var body: some View {
-        Text("Expos")
+        NavigationView{
+            ZStack{
+                
+                Color(.white)
+                    .ignoresSafeArea()
+                
+                ScrollView(){
+                    VStack{
+                        
+                    }
+                }
+            }
+        }
     }
 }
 
