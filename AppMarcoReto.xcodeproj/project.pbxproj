@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FB832C5D290065AB00F34DB8 /* ColectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB832C5C290065AB00F34DB8 /* ColectionView.swift */; };
+		FB1F7F532923FF3A00AAD08D /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F522923FF3A00AAD08D /* gramophone.usdz */; };
+		FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F7F542923FFC600AAD08D /* ARViewController.swift */; };
+		FB66E14828FF2260000FB321 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66E14728FF2260000FB321 /* ScanView.swift */; };
 		FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */; };
 		FBCC02C328F7301E00A9EA9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02C228F7301E00A9EA9D /* ContentView.swift */; };
 		FBCC02C528F7302000A9EA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCC02C428F7302000A9EA9D /* Assets.xcassets */; };
@@ -16,11 +19,13 @@
 		FBCC02D128F734A900A9EA9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02D028F734A900A9EA9D /* HomeView.swift */; };
 		FBCC02D328F734BF00A9EA9D /* ExposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02D228F734BF00A9EA9D /* ExposView.swift */; };
 		FBCC02D528F734C700A9EA9D /* EventosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02D428F734C700A9EA9D /* EventosView.swift */; };
-		FBCC02D728F734D200A9EA9D /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02D628F734D200A9EA9D /* ScanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB832C5C290065AB00F34DB8 /* ColectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColectionView.swift; sourceTree = "<group>"; };
+		FB1F7F522923FF3A00AAD08D /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
+		FB1F7F542923FFC600AAD08D /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		FB66E14728FF2260000FB321 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		FBCC02BD28F7301E00A9EA9D /* AppMarcoReto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMarcoReto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMarcoRetoApp.swift; sourceTree = "<group>"; };
 		FBCC02C228F7301E00A9EA9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,7 +35,6 @@
 		FBCC02D028F734A900A9EA9D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FBCC02D228F734BF00A9EA9D /* ExposView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposView.swift; sourceTree = "<group>"; };
 		FBCC02D428F734C700A9EA9D /* EventosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosView.swift; sourceTree = "<group>"; };
-		FBCC02D628F734D200A9EA9D /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +67,15 @@
 		FBCC02BF28F7301E00A9EA9D /* AppMarcoReto */ = {
 			isa = PBXGroup;
 			children = (
+				FB1F7F522923FF3A00AAD08D /* gramophone.usdz */,
+				FB66E14728FF2260000FB321 /* ScanView.swift */,
+				FB1F7F542923FFC600AAD08D /* ARViewController.swift */,
 				FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */,
 				FBCC02C228F7301E00A9EA9D /* ContentView.swift */,
 				FBCC02D028F734A900A9EA9D /* HomeView.swift */,
 				FB832C5C290065AB00F34DB8 /* ColectionView.swift */,
 				FBCC02D228F734BF00A9EA9D /* ExposView.swift */,
 				FBCC02D428F734C700A9EA9D /* EventosView.swift */,
-				FBCC02D628F734D200A9EA9D /* ScanView.swift */,
 				FBCC02CE28F7340100A9EA9D /* ActividadView.swift */,
 				FBCC02C428F7302000A9EA9D /* Assets.xcassets */,
 				FBCC02C628F7302000A9EA9D /* Preview Content */,
@@ -144,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBCC02C828F7302000A9EA9D /* Preview Assets.xcassets in Resources */,
+				FB1F7F532923FF3A00AAD08D /* gramophone.usdz in Resources */,
 				FBCC02C528F7302000A9EA9D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,10 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBCC02D728F734D200A9EA9D /* ScanView.swift in Sources */,
+				FBCC02D728F734D200A9EA9D /* 
+        View.swift in Sources */,
 				FB832C5D290065AB00F34DB8 /* ColectionView.swift in Sources */,
+				FB66E14828FF2260000FB321 /* ScanView.swift in Sources */,
 				FBCC02C328F7301E00A9EA9D /* ContentView.swift in Sources */,
 				FBCC02D128F734A900A9EA9D /* HomeView.swift in Sources */,
+				FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */,
 				FBCC02CF28F7340100A9EA9D /* ActividadView.swift in Sources */,
 				FBCC02D528F734C700A9EA9D /* EventosView.swift in Sources */,
 				FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */,
@@ -291,8 +301,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppMarcoReto/Preview Content\"";
+				DEVELOPMENT_TEAM = 84GA94WD2B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augumented Reality";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,8 +332,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppMarcoReto/Preview Content\"";
+				DEVELOPMENT_TEAM = 84GA94WD2B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augumented Reality";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
