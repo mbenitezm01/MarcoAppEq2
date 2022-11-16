@@ -18,21 +18,22 @@ struct ContentView: View {
             ExposView()
                 .tabItem{
                     Text("Expos")
-                    Image(systemName: "house.fill")
+                    Image(systemName: "film")
                 }
             EventosView()
                 .tabItem{
                     Text("Eventos")
-                    Image(systemName: "house.fill")
+                    Image(systemName: "calendar")
                 }
             ScanView()
                 .tabItem{
                     Text("Scan")
-                    Image(systemName: "house.fill")
+                    Image(systemName: "qrcode")
                 }
             ColectionView()
                 .tabItem{
                     Text("Coleccion")
+                    Image(systemName: "photo.artframe")
                     Image(systemName: "house.fill")
                 }
         }
