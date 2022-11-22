@@ -16,11 +16,11 @@
 		4B748B8F292400960013E28D /* ExposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B8E292400960013E28D /* ExposViewModel.swift */; };
 		4B748B912924012F0013E28D /* ExposDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B902924012F0013E28D /* ExposDetailView.swift */; };
 		4B748B93292405130013E28D /* ExposItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B92292405130013E28D /* ExposItemView.swift */; };
-		FB832C5D290065AB00F34DB8 /* ColectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB832C5C290065AB00F34DB8 /* ColectionView.swift */; };
 		FB1F7F532923FF3A00AAD08D /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F522923FF3A00AAD08D /* gramophone.usdz */; };
 		FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F7F542923FFC600AAD08D /* ARViewController.swift */; };
-		FB1F7F592924199900AAD08D /* model.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F582924199900AAD08D /* model.usdz */; };
+		FB1F7F592924199900AAD08D /* pirinola.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F582924199900AAD08D /* pirinola.usdz */; };
 		FB66E14828FF2260000FB321 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66E14728FF2260000FB321 /* ScanView.swift */; };
+		FB832C5D290065AB00F34DB8 /* ColectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB832C5C290065AB00F34DB8 /* ColectionView.swift */; };
 		FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */; };
 		FBCC02C328F7301E00A9EA9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02C228F7301E00A9EA9D /* ContentView.swift */; };
 		FBCC02C528F7302000A9EA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCC02C428F7302000A9EA9D /* Assets.xcassets */; };
@@ -41,11 +41,11 @@
 		4B748B8E292400960013E28D /* ExposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposViewModel.swift; sourceTree = "<group>"; };
 		4B748B902924012F0013E28D /* ExposDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposDetailView.swift; sourceTree = "<group>"; };
 		4B748B92292405130013E28D /* ExposItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposItemView.swift; sourceTree = "<group>"; };
-		FB832C5C290065AB00F34DB8 /* ColectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColectionView.swift; sourceTree = "<group>"; };
 		FB1F7F522923FF3A00AAD08D /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		FB1F7F542923FFC600AAD08D /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		FB1F7F582924199900AAD08D /* model.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = model.usdz; sourceTree = "<group>"; };
+		FB1F7F582924199900AAD08D /* pirinola.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pirinola.usdz; sourceTree = "<group>"; };
 		FB66E14728FF2260000FB321 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		FB832C5C290065AB00F34DB8 /* ColectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColectionView.swift; sourceTree = "<group>"; };
 		FBCC02BD28F7301E00A9EA9D /* AppMarcoReto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMarcoReto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMarcoRetoApp.swift; sourceTree = "<group>"; };
 		FBCC02C228F7301E00A9EA9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		FBCC02BF28F7301E00A9EA9D /* AppMarcoReto */ = {
 			isa = PBXGroup;
 			children = (
-				FB1F7F582924199900AAD08D /* model.usdz */,
+				FB1F7F582924199900AAD08D /* pirinola.usdz */,
 				FB1F7F522923FF3A00AAD08D /* gramophone.usdz */,
 				FB66E14728FF2260000FB321 /* ScanView.swift */,
 				FB1F7F542923FFC600AAD08D /* ARViewController.swift */,
@@ -206,7 +206,7 @@
 				4B4C4427291AD46600F5A437 /* MarkPro-Book.otf in Resources */,
 				FBCC02C828F7302000A9EA9D /* Preview Assets.xcassets in Resources */,
 				FB1F7F532923FF3A00AAD08D /* gramophone.usdz in Resources */,
-				FB1F7F592924199900AAD08D /* model.usdz in Resources */,
+				FB1F7F592924199900AAD08D /* pirinola.usdz in Resources */,
 				FBCC02C528F7302000A9EA9D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,8 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBCC02D728F734D200A9EA9D /* 
-        View.swift in Sources */,
 				FB832C5D290065AB00F34DB8 /* ColectionView.swift in Sources */,
 				FB66E14828FF2260000FB321 /* ScanView.swift in Sources */,
 				FBCC02C328F7301E00A9EA9D /* ContentView.swift in Sources */,

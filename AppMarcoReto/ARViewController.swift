@@ -13,6 +13,12 @@ import Combine
 
 class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayViewDelegate {
     
+    var modelName:String = ""
+    
+    public func updateModelName(name:String){
+        modelName = name
+    }
+    
     private var arView: ARView!
 
     override func viewDidLoad() {
@@ -44,7 +50,9 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
         
     }
     
-    
+    /*
+     
+     
     func placeModel() {
         guard let model = try? Entity.load(named: "model") else { return }
         model.name = "model"
@@ -57,20 +65,13 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
         print("place model")
         
     }
+     */
     
     func moveModel(raycast: ARRaycastResult) {
         
-        /*
-        guard let model = arView.scene.findEntity(named: "model") else {
-            return
-        }
-        
-        model.move(to: transform, relativeTo: model)
-        */
-        
         arView.scene.findEntity(named: "model")?.removeFromParent()
         
-        guard let model = try? Entity.load(named: "gramophone") else { return }
+        guard let model = try? Entity.load(named: modelName) else { return }
         model.name = "model"
         
 
