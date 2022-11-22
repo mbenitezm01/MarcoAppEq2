@@ -8,43 +8,18 @@
 import SwiftUI
 import ARKit
 import RealityKit
-import Combine
-
-/*
-struct RealityKitView: UIViewRepresentable {
-    func makeUIView(context: Context) -> ARView {
-       let view = ARView()
-        
-        // Start AR session
-        let session = view.session
-        let config = ARWorldTrackingConfiguration()
-        config.planeDetection = [.horizontal]
-        session.run(config)
-        
-        // Add coaching overlay
-        let coachingOverlay = ARCoachingOverlayView()
-        coachingOverlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        coachingOverlay.session = session
-        coachingOverlay.goal = .horizontalPlane
-        view.addSubview(coachingOverlay)
-        
-        // Set debug options
-        #if DEBUG
-        view.debugOptions = [.showFeaturePoints, .showAnchorOrigins, .showAnchorGeometry]
-        #endif
-        
-       return view
-    }
-
-    func updateUIView(_ view: ARView, context: Context) {
-    }
-}
- */
-
 
 struct ScanView: View {
+    let modelName:String
+    
     var body: some View {
         ARViewContainer().edgesIgnoringSafeArea(.all)
+        .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
+                Color.clear
+                    .frame(height: 0)
+                    .background(Material.bar)
+            }
+            .ignoresSafeArea(.all, edges: .top)
     }
 }
 
@@ -52,6 +27,7 @@ struct ARViewContainer: UIViewControllerRepresentable {
     func makeUIViewController(context: UIViewControllerRepresentableContext<ARViewContainer>) -> ARViewController{
         
         let viewController = ARViewController()
+        viewController.updateModelName(name: "gramophone")
         return viewController
         
     }
@@ -63,6 +39,6 @@ struct ARViewContainer: UIViewControllerRepresentable {
 
 struct ScanView_Previews: PreviewProvider {
     static var previews: some View {
-        ScanView()
+        ScanView(modelName: "model")
     }
 }

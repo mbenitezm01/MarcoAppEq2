@@ -13,6 +13,12 @@ import Combine
 
 class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayViewDelegate {
     
+    var modelName:String = ""
+    
+    public func updateModelName(name:String){
+        modelName = name
+    }
+    
     private var arView: ARView!
 
     override func viewDidLoad() {
@@ -21,9 +27,11 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
         arView = ARView(frame: view.bounds)
         view.addSubview(arView)
         
-        let image = arView.session.currentFrame?.capturedImage
-        let qrDetector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil)
-        
+        // Set debug options
+        #if DEBUG
+        arView.debugOptions = [.showFeaturePoints, .showAnchorOrigins, .showAnchorGeometry]
+        #endif
+
     }
     
     override func viewWillAppear(_ animated: Bool){
@@ -36,25 +44,69 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
         arView.session.run(config)
         arView.session.delegate = self
         
-        placeModel()
+        //placeModel()
+        
+        
         
     }
     
-    
+    /*
+     
+     
     func placeModel() {
-        guard let gramophone = try? Entity.load(named: "gramophone") else { return }
+        guard let model = try? Entity.load(named: "model") else { return }
+        model.name = "model"
         
         let anchor = AnchorEntity(plane: .horizontal)
-        anchor.addChild(gramophone)
+        anchor.addChild(model)
         
         arView.scene.addAnchor(anchor)
         
-        for animation in gramophone.availableAnimations {
-            gramophone.playAnimation(animation.repeat())
-        }
+        print("place model")
+        
+    }
+     */
+    
+    func moveModel(raycast: ARRaycastResult) {
+        
+        arView.scene.findEntity(named: "model")?.removeFromParent()
+        
+        guard let model = try? Entity.load(named: modelName) else { return }
+        model.name = "model"
+        
+
+        let anchor = AnchorEntity(raycastResult: raycast)
+        
+        anchor.addChild(model)
+        
+        arView.scene.addAnchor(anchor)
+        
+        
     }
     
+    
+    func addTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        self.arView.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleTap(recognizer: UITapGestureRecognizer?) {
+        
+        print("tap")
+        
+        let results = self.arView.raycast(from: self.arView.center, allowing: .existingPlaneGeometry, alignment: .horizontal)
+        if let firstResult = results.first {
+            
+            print("move model")
+            moveModel(raycast: firstResult)
+            
+        }
+    }
+        
+        
+    
     override func viewDidAppear(_ animated: Bool) {
+        addTapGesture()
         super.viewDidAppear(animated)
         print("viewDidAppear")
     }

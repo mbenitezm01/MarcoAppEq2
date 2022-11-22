@@ -25,7 +25,7 @@ struct ContentView: View {
                     Text("Eventos")
                     Image(systemName: "calendar")
                 }
-            ScanView()
+            ScanView(modelName: "model")
                 .tabItem{
                     Text("Scan")
                     Image(systemName: "qrcode")
