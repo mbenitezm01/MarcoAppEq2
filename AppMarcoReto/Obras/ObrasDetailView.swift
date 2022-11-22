@@ -53,7 +53,7 @@ struct ObrasDetailView: View {
                     Text("Quiz")
                         .background(.brown)
                         .foregroundColor(.white)
-                    NavigationLink(destination: ExposDetailView(expo: ExposModel.defaultExpo), label:{Text("3D")
+                    NavigationLink(destination: ScanView(modelName: obra.modelName), label:{Text("3D")
                             .background(.brown)
                             .foregroundColor(.white)})
                 }//HStack

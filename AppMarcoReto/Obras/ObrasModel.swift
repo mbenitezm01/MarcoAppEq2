@@ -17,8 +17,9 @@ struct ObrasModel:Identifiable{
     var year:Int
     var descripcion:String
     var linkVideo:String
+    var modelName:String
 }
 
 extension ObrasModel{
-    public static var defaultObra = ObrasModel(nombreImagen: "marco dflt", artista: "Anonimo", titulo: "Obra", tecnica: "Ninguna", medidas: "0*0", year: 1991, descripcion: "Esta obra es parte de la coleccion del Museo de Arte Contemporaneo, ubicado en Monterrey, Nuevo Leon, Mexico. Visitanos para conocerla!", linkVideo: "https://www.youtube.com/watch?v=fv1Q0SPWonk")
+    public static var defaultObra = ObrasModel(nombreImagen: "marco dflt", artista: "Anonimo", titulo: "Obra", tecnica: "Ninguna", medidas: "0*0", year: 1991, descripcion: "Esta obra es parte de la coleccion del Museo de Arte Contemporaneo, ubicado en Monterrey, Nuevo Leon, Mexico. Visitanos para conocerla!", linkVideo: "https://www.youtube.com/watch?v=fv1Q0SPWonk", modelName: "pirinola")
 }
