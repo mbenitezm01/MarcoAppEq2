@@ -12,6 +12,7 @@ struct ObrasDetailView: View {
     let obra:ObrasModel
     
     var body: some View {
+        NavigationView{
         ZStack{
             Color("ColorFondoMarco")
                 .ignoresSafeArea()
@@ -41,22 +42,25 @@ struct ObrasDetailView: View {
                     .offset(y:-50)
                 Text("\n\(obra.descripcion)")
                     .font(Font.custom("MarkPro-Book", size: 20)
-                        )
+                    )
                     .padding(.horizontal, 20)
                     .offset(y:-50)
                     .multilineTextAlignment(.center)
                 Link(destination: URL(string:obra.linkVideo)!, label: {Label("Video", systemImage: "play.tv.fill")})
+                    //NavigationLink(destination: WebView(html: obra.linkVideo), label: {Label("Video", systemImage: "play.tv.fill")})
                 
                 HStack{
                     Text("Quiz")
                         .background(.brown)
                         .foregroundColor(.white)
-                    Text("3D")
-                        .background(.brown)
-                        .foregroundColor(.white)
+                    NavigationLink(destination: ExposDetailView(expo: ExposModel.defaultExpo), label:{Text("3D")
+                            .background(.brown)
+                            .foregroundColor(.white)})
                 }//HStack
             }//VStack
         }//ZStack
+    }//NavigationView
+        .navigationViewStyle(.stack)
     }
 }
 

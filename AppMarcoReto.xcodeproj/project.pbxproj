@@ -16,6 +16,7 @@
 		4B748B8F292400960013E28D /* ExposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B8E292400960013E28D /* ExposViewModel.swift */; };
 		4B748B912924012F0013E28D /* ExposDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B902924012F0013E28D /* ExposDetailView.swift */; };
 		4B748B93292405130013E28D /* ExposItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B92292405130013E28D /* ExposItemView.swift */; };
+		4BB74BA82927FFB6005A7173 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB74BA72927FFB6005A7173 /* WebView.swift */; };
 		FB1F7F532923FF3A00AAD08D /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F522923FF3A00AAD08D /* gramophone.usdz */; };
 		FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F7F542923FFC600AAD08D /* ARViewController.swift */; };
 		FB1F7F592924199900AAD08D /* pirinola.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F582924199900AAD08D /* pirinola.usdz */; };
@@ -41,6 +42,7 @@
 		4B748B8E292400960013E28D /* ExposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposViewModel.swift; sourceTree = "<group>"; };
 		4B748B902924012F0013E28D /* ExposDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposDetailView.swift; sourceTree = "<group>"; };
 		4B748B92292405130013E28D /* ExposItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposItemView.swift; sourceTree = "<group>"; };
+		4BB74BA72927FFB6005A7173 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		FB1F7F522923FF3A00AAD08D /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		FB1F7F542923FFC600AAD08D /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		FB1F7F582924199900AAD08D /* pirinola.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pirinola.usdz; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		FBCC02B428F7301E00A9EA9D = {
 			isa = PBXGroup;
 			children = (
+				4BB74BA72927FFB6005A7173 /* WebView.swift */,
 				FBCC02BF28F7301E00A9EA9D /* AppMarcoReto */,
 				FBCC02BE28F7301E00A9EA9D /* Products */,
 			);
@@ -233,6 +236,7 @@
 				4B4C4431291AF61100F5A437 /* ObrasItemView.swift in Sources */,
 				4B4C442D291AE09800F5A437 /* ObrasDetailView.swift in Sources */,
 				FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */,
+				4BB74BA82927FFB6005A7173 /* WebView.swift in Sources */,
 				FBCC02D328F734BF00A9EA9D /* ExposView.swift in Sources */,
 				4B748B93292405130013E28D /* ExposItemView.swift in Sources */,
 			);
@@ -363,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppMarcoReto/Preview Content\"";
-				DEVELOPMENT_TEAM = 84GA94WD2B;
+				DEVELOPMENT_TEAM = J52BK9ULJM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Augumented Reality";
@@ -372,13 +376,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoReto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoReto.AD22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -394,7 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppMarcoReto/Preview Content\"";
-				DEVELOPMENT_TEAM = 84GA94WD2B;
+				DEVELOPMENT_TEAM = J52BK9ULJM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Augumented Reality";
@@ -403,13 +407,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoReto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoReto.AD22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

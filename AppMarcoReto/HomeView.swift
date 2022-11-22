@@ -15,29 +15,32 @@ struct HomeView: View {
             ZStack{
                 Color("ColorFondoMarco")
                     .ignoresSafeArea()
-                VStack{
-                    Text("Expos")
-                        .font(Font.custom("MarkPro-Book",size: 36))
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 20) { // HStack(spacing:20)
+                ScrollView(.vertical){
+                    VStack{
+                        Text("Expos")
+                            .font(Font.custom("MarkPro-Book",size: 45))
+                        TabView{
                             ForEach(exposVM.arrExpos) { item in NavigationLink(destination:ExposDetailView(expo: item),label:{ExposItemView(expo:item)})
                                 
-                            } // ForEach
-                        } // HStack
-                    } // ScrollView
-                    Text("Eventos")
-                        .font(Font.custom("MarkPro-Book",size: 36))
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 20) { // HStack(spacing:20)
-                            ForEach(obrasVM.arrObras) { item in NavigationLink(destination:ObrasDetailView(obra: item),label:{ObrasItemView(obra:item)})
-                                
-                            } // ForEach
-                        } // HStack
-                    } // ScrollView
-                    
-                } // VStack
+                            }
+                        }
+                        .frame(width: 250, height: 250, alignment: .center)
+                        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                        Text("Eventos")
+                            .font(Font.custom("MarkPro-Book",size: 45))
+                            TabView{
+                                ForEach(obrasVM.arrObras) { item in NavigationLink(destination:ObrasDetailView(obra: item),label:{ObrasItemView(obra:item)})
+                                    
+                                } // ForEach
+                            } // TabView
+                            .frame(width:250, height: 250, alignment: .center)
+                            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                        
+                    } // VStack
+                } // ScrollView
             } // ZStack
         } // NavigationView
+        .navigationViewStyle(.stack)
     }
 }
 
