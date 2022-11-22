@@ -13,7 +13,7 @@ struct ScanView: View {
     let modelName:String
     
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        ARViewContainer(modelName: modelName).edgesIgnoringSafeArea(.all)
         .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
                 Color.clear
                     .frame(height: 0)
@@ -24,10 +24,12 @@ struct ScanView: View {
 }
 
 struct ARViewContainer: UIViewControllerRepresentable {
+    let modelName:String
+    
     func makeUIViewController(context: UIViewControllerRepresentableContext<ARViewContainer>) -> ARViewController{
         
         let viewController = ARViewController()
-        viewController.updateModelName(name: "gramophone")
+        viewController.updateModelName(name: modelName)
         return viewController
         
     }
