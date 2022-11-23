@@ -13,7 +13,8 @@ struct ExposItemView: View {
         Image(expo.nombreImagen)
             .resizable()
             .scaledToFit()
-            .frame(width:160)
+            .frame(width:300)
+            .cornerRadius(10)
             .overlay(alignment: .topLeading, content: {
                 Text(expo.titulo)
                     .font(.custom("MarkPro-Book", size: 20))
