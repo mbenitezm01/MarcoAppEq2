@@ -8,78 +8,37 @@
 import SwiftUI
 
 struct ColectionView: View {
+    @StateObject var obrasVM = ObrasViewModel()
+    
+    private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
-        VStack{
-            
-            Text("Obras ")
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-                .lineLimit(2)
-                .padding()
-                .frame(width: 500.0)
-                .scaledToFit()
-                .background(Color.brown)
-                .cornerRadius(10)
-                .shadow(radius: 10)
-            
-            ScrollView(){
-                HStack{
-
-                    Image("LadyLiberty")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                    Image("CasinoFilosofico")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                    Image("Guitarra")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                }
-                .padding()
-                HStack{
-                    Image("Stargazer")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                    Image("PlaceHolder")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                    Image("PlaceHolder")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                }
-                .padding()
-                HStack{
-                    Image("PlaceHolder")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                    Image("PlaceHolder")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                    Image("PlaceHolder")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                }
-                .padding()
-                HStack{
-                    Image("PlaceHolder")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                    Image("PlaceHolder")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                    Image("PlaceHolder")
-                        .resizable()
-                        .frame(width: 110.0, height: 110.0)
-                }
-                .padding()
+        NavigationView{
+            VStack{
                 
-            }
-            
-            
-            
-            
-            
-        }
+                Text("Obras ")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .lineLimit(2)
+                    .padding()
+                    .frame(width: 500.0)
+                    .scaledToFit()
+                    .background(Color.brown)
+                    .cornerRadius(10)
+                    .shadow(radius: 10)
+                
+                ScrollView(){
+                    LazyVGrid(columns: threeColumnGrid, spacing: 20){
+                        ForEach(obrasVM.arrObras) { item in
+                            NavigationLink(destination: ObrasDetailView(obra: item), label: {
+                                ObrasItemView(obra: item)
+                            })
+                            .frame(width: 120, height: 120)
+                        }
+                    }
+                }
+            }//VStack
+        } //NavigationView
     }
 }
 
