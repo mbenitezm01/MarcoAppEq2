@@ -9,21 +9,45 @@ import Foundation
 import SwiftUI
 
 
-class ObrasViewModel:ObservableObject{
+class ObrasViewModel : ObservableObject{
     @Published var arrObras = [ObrasModel]()
     
-    init(){
-        getObras()
-    }
+    /*init() {
+        
+      getObras()
     
-    func getObras(){
-        var obra:ObrasModel
+    }*/
+    
+    func getObras() async throws{
+        //var obra:ObrasModel
         
-        obra = ObrasModel.defaultObra
+        //obra = ObrasModel.defaultObra
         
-        arrObras.append(obra)
-        arrObras.append(obra)
-        arrObras.append(obra)
+        //arrObras.append(obra)
+        //arrObras.append(obra)
+        //arrObras.append(obra)
+        
+        guard let url = URL(string: "http://10.14.255.68:10205/expos")
+        else{
+            print("Invalid URL")
+            return
+        }
+        
+        let urlRequest = URLRequest(url: url)
+        
+        let(data, response) = try await URLSession.shared.data(for: urlRequest)
+        
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+            print("error")
+            return
+        }
+        
+        let results = try JSONDecoder().decode([ObrasModel].self, from: data)
+        
+        DispatchQueue.main.async {
+            self.arrObras = results
+            print(results)
+        }
     }
 }
 
