@@ -18,8 +18,14 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
             
     var placeMode:Bool = true
     
+    var focusArr:[FocusEntity] = []
+    
     func setMode(mode:Bool){
         placeMode = mode
+        if placeMode == true{
+            focusArr[0].isEnabled = true
+        }
+        else { focusArr[0].isEnabled = false }
     }
     
     public func updateModelName(name:String){
@@ -34,6 +40,7 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
         arView = ARView(frame: view.bounds)
         view.addSubview(arView)
         let focusSquare = FocusEntity(on: self.arView, focus: .classic)
+        focusArr.append(focusSquare)
         
         // Set debug options
         #if DEBUG
@@ -74,19 +81,6 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
      
     
     func moveModel(transform: simd_float4x4) {
-        
-        /*
-        let anchor = AnchorEntity(raycastResult: raycast)
-        
-        arView.scene.findEntity(named: "model")?.removeFromParent()
-        
-        guard let model = try? Entity.load(named: modelName) else { return }
-        model.name = "model"
-        
-        
-        anchor.addChild(model)
-        
-        arView.scene.addAnchor(anchor)*/
         
         guard let model = arView.scene.findEntity(named: "model") else { return }
         

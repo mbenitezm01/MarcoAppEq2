@@ -25,7 +25,7 @@ struct ScanView: View {
                 }
                 .ignoresSafeArea(.all, edges: .top)
             
-            Toggle("Toggle", isOn: $toggleState)
+            Toggle("", isOn: $toggleState)
             
         }
     }
