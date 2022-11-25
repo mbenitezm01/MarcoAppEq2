@@ -10,10 +10,17 @@ import ARKit
 import RealityKit
 import SwiftUI
 import Combine
+import FocusEntity
 
 class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayViewDelegate {
-    
+                
     var modelName:String = ""
+            
+    var placeMode:Bool = true
+    
+    func setMode(mode:Bool){
+        placeMode = mode
+    }
     
     public func updateModelName(name:String){
         modelName = name
@@ -26,6 +33,7 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
         // Do any additional setup after loading the view.
         arView = ARView(frame: view.bounds)
         view.addSubview(arView)
+        let focusSquare = FocusEntity(on: self.arView, focus: .classic)
         
         // Set debug options
         #if DEBUG
@@ -44,17 +52,15 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
         arView.session.run(config)
         arView.session.delegate = self
         
-        //placeModel()
-        
-        
+        placeModel(modelName: modelName)
         
     }
     
-    /*
+    
      
      
-    func placeModel() {
-        guard let model = try? Entity.load(named: "model") else { return }
+    func placeModel(modelName:String) {
+        guard let model = try? Entity.load(named: modelName) else { return }
         model.name = "model"
         
         let anchor = AnchorEntity(plane: .horizontal)
@@ -65,21 +71,26 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
         print("place model")
         
     }
-     */
+     
     
-    func moveModel(raycast: ARRaycastResult) {
+    func moveModel(transform: simd_float4x4) {
+        
+        /*
+        let anchor = AnchorEntity(raycastResult: raycast)
         
         arView.scene.findEntity(named: "model")?.removeFromParent()
         
         guard let model = try? Entity.load(named: modelName) else { return }
         model.name = "model"
         
-
-        let anchor = AnchorEntity(raycastResult: raycast)
         
         anchor.addChild(model)
         
-        arView.scene.addAnchor(anchor)
+        arView.scene.addAnchor(anchor)*/
+        
+        guard let model = arView.scene.findEntity(named: "model") else { return }
+        
+        model.move(to: transform, relativeTo: nil)
         
         
     }
@@ -97,8 +108,10 @@ class ARViewController: UIViewController, ARSessionDelegate, ARCoachingOverlayVi
         let results = self.arView.raycast(from: self.arView.center, allowing: .existingPlaneGeometry, alignment: .horizontal)
         if let firstResult = results.first {
             
-            print("move model")
-            moveModel(raycast: firstResult)
+            if placeMode {
+                print("move model")
+                moveModel(transform: firstResult.worldTransform)
+            }
             
         }
     }
@@ -135,6 +148,7 @@ extension ARViewController {
     }
     
     func session(_ session: ARSession, didRemove anchors: [ARAnchor]){
+        //focusSquare.isEnabled = false
         print("didRemove")
     }
 }

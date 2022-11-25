@@ -12,19 +12,28 @@ import RealityKit
 struct ScanView: View {
     let modelName:String
     
+    @State var toggleState = true
+            
     var body: some View {
-        ARViewContainer(modelName: modelName).edgesIgnoringSafeArea(.all)
-        .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
-                Color.clear
-                    .frame(height: 0)
-                    .background(Material.bar)
-            }
-            .ignoresSafeArea(.all, edges: .top)
+        ZStack{
+            
+            ARViewContainer(modelName: modelName, toggleState: toggleState).edgesIgnoringSafeArea(.all)
+                .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
+                    Color.clear
+                        .frame(height: 0)
+                        .background(Material.bar)
+                }
+                .ignoresSafeArea(.all, edges: .top)
+            
+            Toggle("Toggle", isOn: $toggleState)
+            
+        }
     }
 }
 
 struct ARViewContainer: UIViewControllerRepresentable {
     let modelName:String
+    let toggleState:Bool
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<ARViewContainer>) -> ARViewController{
         
@@ -35,7 +44,7 @@ struct ARViewContainer: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: ARViewController, context: UIViewControllerRepresentableContext<ARViewContainer>){
-        
+        uiViewController.setMode(mode: toggleState)
     }
 }
 

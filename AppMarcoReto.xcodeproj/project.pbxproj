@@ -30,6 +30,7 @@
 		FBCC02D128F734A900A9EA9D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02D028F734A900A9EA9D /* HomeView.swift */; };
 		FBCC02D328F734BF00A9EA9D /* ExposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02D228F734BF00A9EA9D /* ExposView.swift */; };
 		FBCC02D528F734C700A9EA9D /* EventosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02D428F734C700A9EA9D /* EventosView.swift */; };
+		FBD23DE7292E8C1300C40025 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = FBD23DE6292E8C1300C40025 /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD23DE7292E8C1300C40025 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +166,9 @@
 			dependencies = (
 			);
 			name = AppMarcoReto;
+			packageProductDependencies = (
+				FBD23DE6292E8C1300C40025 /* FocusEntity */,
+			);
 			productName = AppMarcoReto;
 			productReference = FBCC02BD28F7301E00A9EA9D /* AppMarcoReto.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +197,9 @@
 				Base,
 			);
 			mainGroup = FBCC02B428F7301E00A9EA9D;
+			packageReferences = (
+				FBD23DE5292E8C1300C40025 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = FBCC02BE28F7301E00A9EA9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -382,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoReto2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoRetoNov23;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -413,7 +421,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoReto2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoRetoNov23;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -443,6 +451,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBD23DE5292E8C1300C40025 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBD23DE6292E8C1300C40025 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBD23DE5292E8C1300C40025 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBCC02B528F7301E00A9EA9D /* Project object */;
 }
