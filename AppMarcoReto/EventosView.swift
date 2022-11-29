@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct EventosView: View {
+    @StateObject var EventosVM = EventosViewModel()
+
     var body: some View {
-        Text("Eventos")
+        NavigationView{
+            ZStack{
+                Color("ColorFondoMarco")
+                    .ignoresSafeArea()
+                
+                ScrollView(){
+                    VStack(spacing: 20){
+                        ForEach(EventosVM.arrEventos) { item in
+                            NavigationLink(destination: EventosDetailView(evento: item), label: {
+                                EventosItemView(evento: item)
+                            })
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

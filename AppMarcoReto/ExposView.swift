@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct ExposView: View {
+    
+    @StateObject var ExposVM = ExposViewModel()
+    
     var body: some View {
         NavigationView{
             ZStack{
-                
-                Color(.white)
+                Color("ColorFondoMarco")
                     .ignoresSafeArea()
                 
                 ScrollView(){
-                    VStack{
-                        
+                    VStack(spacing: 20){
+                        ForEach(ExposVM.arrExpos) { item in
+                            NavigationLink(destination: ExposDetailView(expo: item), label: {
+                                ExposItemView(expo: item)
+                            })
+                        }
                     }
                 }
             }

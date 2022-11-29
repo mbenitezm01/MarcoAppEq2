@@ -12,18 +12,27 @@ struct ObrasItemView: View {
     let obra:ObrasModel
     
     var body: some View {
-        Image(obra.nombreImagen)
-            .resizable()
-            .scaledToFit()
-            .frame(width:240)
-            .overlay(alignment: .topLeading, content: {
-                Text(obra.titulo)
-                    .font(.custom("MarkPro-Book", size: 20))
-                    .foregroundColor(.white)
-                    //.stroke(color.black)
-                    .padding()
+        AsyncImage(url: URL(string: "http://10.14.255.68:10205/" + obra.nombreImagen[0])){phase in
+            if let image = phase.image{
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width:120, height: 120)
+                    .clipped()
+                    .overlay(alignment: .topLeading, content: {
+                        /*Text(obra.titulo)
+                            .font(.custom("MarkPro-Book", size: 20))
+                            .foregroundColor(.white)
+                        //.stroke(color.black)
+                            .padding()*/
                     
-            })
+                })
+            } else if phase.error != nil{
+                Color.red
+            } else {
+                Color.blue
+            }
+        }
     }
 }
 

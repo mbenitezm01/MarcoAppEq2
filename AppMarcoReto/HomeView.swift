@@ -26,15 +26,27 @@ struct HomeView: View {
                         }
                         .frame(width: 250, height: 250, alignment: .center)
                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                        
+                        
                         Text("Eventos")
                             .font(Font.custom("MarkPro-Book",size: 45))
-                            TabView{
-                                ForEach(obrasVM.arrObras) { item in NavigationLink(destination:ObrasDetailView(obra: item),label:{ObrasItemView(obra:item)})
-                                    
-                                } // ForEach
-                            } // TabView
-                            .frame(width:250, height: 250, alignment: .center)
-                            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                        TabView{
+                            ForEach(obrasVM.arrObras) { item in NavigationLink(destination:ObrasDetailView(obra: item),label:{ObrasItemView(obra:item)})
+                                
+                            } // ForEach
+                        } // TabView
+                        .frame(width:250, height: 250, alignment: .center)
+                        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                        .task {
+                            do{
+                                try await obrasVM.getObras()
+                                print("llamda api")
+                                print(obrasVM.arrObras)
+                            }
+                            catch{
+                                print("Error", error)
+                            }
+                        }
                         
                     } // VStack
                 } // ScrollView

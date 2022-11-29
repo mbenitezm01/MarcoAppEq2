@@ -9,39 +9,45 @@ import Foundation
 import SwiftUI
 
 
-class ObrasViewModel:ObservableObject{
+class ObrasViewModel : ObservableObject{
     @Published var arrObras = [ObrasModel]()
     
-    init(){
-        getObras()
-    }
+    /*init() {
+        
+      getObras()
     
-    func getObras(){
-        /*
-        var obra:ObrasModel
+    }*/
+    
+    func getObras() async throws{
+        //var obra:ObrasModel
         
-        obra = ObrasModel.defaultObra
+        //obra = ObrasModel.defaultObra
         
-        arrObras.append(obra)
-        arrObras.append(obra)
-        arrObras.append(obra)
-         */
+        //arrObras.append(obra)
+        //arrObras.append(obra)
+        //arrObras.append(obra)
         
-        var obra1:ObrasModel
-        var obra2:ObrasModel
-        var obra3:ObrasModel
-        var obra4:ObrasModel
+        guard let url = URL(string: "http://10.14.255.68:10205/expos")
+        else{
+            print("Invalid URL")
+            return
+        }
         
-        obra1 = ObrasModel(nombreImagen: "marco dflt", artista: "Anonimo", titulo: "Obra1", tecnica: "Ninguna", medidas: "0*0", year: 1991, descripcion: "Esta obra es parte de la coleccion del Museo de Arte Contemporaneo, ubicado en Monterrey, Nuevo Leon, Mexico. Visitanos para conocerla!", linkVideo: "https://www.youtube.com/watch?v=fv1Q0SPWonk", modelName: "pirinola")
-        obra2 = ObrasModel(nombreImagen: "marco dflt", artista: "Anonimo", titulo: "Obra2", tecnica: "Ninguna", medidas: "0*0", year: 1991, descripcion: "Esta obra es parte de la coleccion del Museo de Arte Contemporaneo, ubicado en Monterrey, Nuevo Leon, Mexico. Visitanos para conocerla!", linkVideo: "https://www.youtube.com/watch?v=fv1Q0SPWonk", modelName: "pirinola")
-        obra3 = ObrasModel(nombreImagen: "marco dflt", artista: "Anonimo", titulo: "Obra3", tecnica: "Ninguna", medidas: "0*0", year: 1991, descripcion: "Esta obra es parte de la coleccion del Museo de Arte Contemporaneo, ubicado en Monterrey, Nuevo Leon, Mexico. Visitanos para conocerla!", linkVideo: "https://www.youtube.com/watch?v=fv1Q0SPWonk", modelName: "piramide")
-        obra4 = ObrasModel(nombreImagen: "marco dflt", artista: "Anonimo", titulo: "Obra4", tecnica: "Ninguna", medidas: "0*0", year: 1991, descripcion: "Esta obra es parte de la coleccion del Museo de Arte Contemporaneo, ubicado en Monterrey, Nuevo Leon, Mexico. Visitanos para conocerla!", linkVideo: "https://www.youtube.com/watch?v=fv1Q0SPWonk", modelName: "piramide")
+        let urlRequest = URLRequest(url: url)
         
-        arrObras.append(obra1)
-        arrObras.append(obra2)
-        arrObras.append(obra3)
-        arrObras.append(obra4)
+        let(data, response) = try await URLSession.shared.data(for: urlRequest)
         
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+            print("error")
+            return
+        }
+        
+        let results = try JSONDecoder().decode([ObrasModel].self, from: data)
+        
+        DispatchQueue.main.async {
+            self.arrObras = results
+            print(results)
+        }
     }
 }
 
