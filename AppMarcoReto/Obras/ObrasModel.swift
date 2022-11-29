@@ -15,7 +15,7 @@ struct ObrasModel : Codable, Identifiable{
     var tecnica:String?
     var medidas:String?
     var year:Int
-    var descripcion:String
+    var descripcion:String?
     var linkVideo:String?
     var modelName:String?
     

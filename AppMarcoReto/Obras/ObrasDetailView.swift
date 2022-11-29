@@ -51,7 +51,7 @@ struct ObrasDetailView: View {
                     Text("Medidas: \(String(obra.medidas ?? "N/A"))")
                         .font(Font.custom("MarkPro-Book", size: 20))
                         .offset(y:-50)
-                    Text("\n\(obra.descripcion)")
+                    Text("\n\(obra.descripcion ?? "")")
                         .font(Font.custom("MarkPro-Book", size: 20)
                         )
                         .padding(.horizontal, 20)
@@ -61,8 +61,10 @@ struct ObrasDetailView: View {
                     //NavigationLink(destination: WebView(html: obra.linkVideo), label: {Label("Video", systemImage: "play.tv.fill")})
                     
                     HStack{
-                        NavigationLink(destination: ExposDetailView(expo: ExposModel.defaultExpo), label: {Label("Quiz", systemImage: "questionmark.app.fill")}) // cambiar la destination despues
-                        //                    NavigationLink(destination: ScanView(modelName: obra.modelName), label:{Text("3D")
+                        if obra.modelName != nil{
+                            //NavigationLink(destination: ScanView(modelName: obra.modelName), label:{Text("3D")})
+                        }
+                        //
                         //                            .background(.brown)
                         //                            .foregroundColor(.white)})
                     }//HStack

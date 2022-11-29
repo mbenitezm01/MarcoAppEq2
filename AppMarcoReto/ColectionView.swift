@@ -36,9 +36,23 @@ struct ColectionView: View {
                             .frame(width: 120, height: 120)
                         }
                     }
+                    .task {
+                        do{
+                            try await obrasVM.getObras()
+                            print("llamda api")
+                            print(obrasVM.arrObras)
+                        }
+                        catch{
+                            print("Error", error)
+                        }
+                    }
+                    
                 }
+                
+                
             }//VStack
-        } //NavigationView
+        }
+        //NavigationView
     }
 }
 

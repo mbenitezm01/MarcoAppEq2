@@ -16,14 +16,15 @@ struct ObrasItemView: View {
             if let image = phase.image{
                 image
                     .resizable()
-                    .scaledToFit()
-                    .frame(width:240)
+                    .scaledToFill()
+                    .frame(width:120, height: 120)
+                    .clipped()
                     .overlay(alignment: .topLeading, content: {
-                        Text(obra.titulo)
+                        /*Text(obra.titulo)
                             .font(.custom("MarkPro-Book", size: 20))
                             .foregroundColor(.white)
                         //.stroke(color.black)
-                            .padding()
+                            .padding()*/
                     
                 })
             } else if phase.error != nil{

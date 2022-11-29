@@ -28,7 +28,6 @@ struct HomeView: View {
                         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                         
                         
-                        //NavigationLink(destination: <#T##() -> _#>, label: <#T##() -> _#>)
                         Text("Eventos")
                             .font(Font.custom("MarkPro-Book",size: 45))
                         TabView{
