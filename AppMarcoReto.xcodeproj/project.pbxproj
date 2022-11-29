@@ -17,6 +17,7 @@
 		4B748B912924012F0013E28D /* ExposDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B902924012F0013E28D /* ExposDetailView.swift */; };
 		4B748B93292405130013E28D /* ExposItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B92292405130013E28D /* ExposItemView.swift */; };
 		4BB74BA82927FFB6005A7173 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB74BA72927FFB6005A7173 /* WebView.swift */; };
+		4BD82362293143FA009C243E /* ObrasCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD82361293143FA009C243E /* ObrasCollectionView.swift */; };
 		FB1F7F532923FF3A00AAD08D /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F522923FF3A00AAD08D /* gramophone.usdz */; };
 		FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F7F542923FFC600AAD08D /* ARViewController.swift */; };
 		FB1F7F592924199900AAD08D /* pirinola.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F582924199900AAD08D /* pirinola.usdz */; };
@@ -43,6 +44,7 @@
 		4B748B902924012F0013E28D /* ExposDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposDetailView.swift; sourceTree = "<group>"; };
 		4B748B92292405130013E28D /* ExposItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposItemView.swift; sourceTree = "<group>"; };
 		4BB74BA72927FFB6005A7173 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4BD82361293143FA009C243E /* ObrasCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasCollectionView.swift; sourceTree = "<group>"; };
 		FB1F7F522923FF3A00AAD08D /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		FB1F7F542923FFC600AAD08D /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		FB1F7F582924199900AAD08D /* pirinola.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pirinola.usdz; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				4B4C442E291AF31F00F5A437 /* ObrasViewModel.swift */,
 				4B4C442C291AE09800F5A437 /* ObrasDetailView.swift */,
 				4B4C4430291AF61100F5A437 /* ObrasItemView.swift */,
+				4BD82361293143FA009C243E /* ObrasCollectionView.swift */,
 			);
 			path = Obras;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				FBCC02D128F734A900A9EA9D /* HomeView.swift in Sources */,
 				4B4C4429291ADCE300F5A437 /* ObrasModel.swift in Sources */,
 				FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */,
+				4BD82362293143FA009C243E /* ObrasCollectionView.swift in Sources */,
 				FBCC02CF28F7340100A9EA9D /* ActividadView.swift in Sources */,
 				FBCC02D528F734C700A9EA9D /* EventosView.swift in Sources */,
 				4B4C4431291AF61100F5A437 /* ObrasItemView.swift in Sources */,
