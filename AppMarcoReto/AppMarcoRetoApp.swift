@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct AppMarcoRetoApp: App {
+    
+    @StateObject var expos = ExpoViewModel()
+    @StateObject var eventos = EventosViewModel()
+
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+                ContentView()
+                    .environmentObject(expos)
+                    .environmentObject(eventos)
         }
     }
 }

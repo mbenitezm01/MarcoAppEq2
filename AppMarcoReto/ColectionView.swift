@@ -13,17 +13,20 @@ struct ColectionView: View {
     private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
+        ZStack{
+            Color("ColorFondoMarco")
+                .ignoresSafeArea()
         NavigationView{
             VStack{
                 
-                Text("Obras ")
+                Text("Coleccion Marco")
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .lineLimit(2)
                     .padding()
                     .frame(width: 500.0)
                     .scaledToFit()
-                    .background(Color.brown)
+                    .background(Color("Rosa Marco"))
                     .cornerRadius(10)
                     .shadow(radius: 10)
                 
@@ -50,9 +53,11 @@ struct ColectionView: View {
                 }
                 
                 
+                
             }//VStack
         }
         //NavigationView
+    } // ZStack
     }
 }
 

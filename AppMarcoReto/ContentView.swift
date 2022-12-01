@@ -16,12 +16,17 @@ struct ContentView: View {
                     Text("Home")
                     Image(systemName: "house.fill")
                 }
-            ExposView()
-                .tabItem{
-                    Text("Expos")
-                    Image(systemName: "film")
-                }
-            EventosView()
+            NavigationView{
+                ExposView()
+                    }
+            .tabItem{
+                Text("Expos")
+                Image(systemName: "film")
+            }
+            
+            NavigationView{
+                EventosView()
+            }
                 .tabItem{
                     Text("Eventos")
                     Image(systemName: "calendar")
@@ -37,6 +42,11 @@ struct ContentView: View {
                     Image(systemName: "photo.artframe")
                     Image(systemName: "house.fill")
                 }
+        }
+        .onAppear {
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithDefaultBackground()
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
         }
     }
 }

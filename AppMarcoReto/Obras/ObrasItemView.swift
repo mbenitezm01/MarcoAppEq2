@@ -20,12 +20,10 @@ struct ObrasItemView: View {
                     .frame(width:120, height: 120)
                     .clipped()
                     .overlay(alignment: .topLeading, content: {
-                        /*Text(obra.titulo)
-                            .font(.custom("MarkPro-Book", size: 20))
-                            .foregroundColor(.white)
-                        //.stroke(color.black)
-                            .padding()*/
-                    
+                        if obra.modelName != nil{
+                            Text("3D")
+                                .foregroundColor(Color("Rosa Marco"))
+                        }
                 })
             } else if phase.error != nil{
                 Color.red

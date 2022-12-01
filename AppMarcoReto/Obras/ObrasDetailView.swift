@@ -39,30 +39,35 @@ struct ObrasDetailView: View {
                     Text(obra.titulo)
                         .font(Font.custom("MarkPro-Book", size: 40))
                         .offset(y:-50)
+                        .foregroundColor(.black)
                     
                     Text("\(obra.artista), \(String(obra.year))")
                         .font(Font.custom("MarkPro-Book", size: 20))
                         .offset(y:-50)
+                        .foregroundColor(.black)
                     
                     Text("Tecnica: \(String(obra.tecnica ?? "N/A"))")
                         .font(Font.custom("MarkPro-Book", size: 20))
                         .offset(y:-50)
+                        .foregroundColor(.black)
                     
                     Text("Medidas: \(String(obra.medidas ?? "N/A"))")
                         .font(Font.custom("MarkPro-Book", size: 20))
                         .offset(y:-50)
+                        .foregroundColor(.black)
                     Text("\n\(obra.descripcion ?? "")")
                         .font(Font.custom("MarkPro-Book", size: 20)
                         )
                         .padding(.horizontal, 20)
                         .offset(y:-50)
                         .multilineTextAlignment(.center)
+                        .foregroundColor(.black)
                     Link(destination: URL(string:obra.linkVideo ?? "https://www.youtube.com/watch?v=fv1Q0SPWonk")!, label: {Label("Video", systemImage: "play.tv.fill")})
                     //NavigationLink(destination: WebView(html: obra.linkVideo), label: {Label("Video", systemImage: "play.tv.fill")})
                     
                     HStack{
                         if obra.modelName != nil{
-                            //NavigationLink(destination: ScanView(modelName: obra.modelName), label:{Text("3D")})
+                            NavigationLink(destination: ScanView(modelName: obra.modelName!), label:{Text("3D")})
                         }
                         //
                         //                            .background(.brown)

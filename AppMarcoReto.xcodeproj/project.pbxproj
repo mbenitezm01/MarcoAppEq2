@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B25BA202936A70200703F48 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B25BA1F2936A70200703F48 /* SDWebImageSwiftUI */; };
+		4B25BA222936A7A900703F48 /* ServerErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA212936A7A900703F48 /* ServerErrorView.swift */; };
+		4B25BA242937CC8700703F48 /* Eventos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA232937CC8700703F48 /* Eventos.swift */; };
+		4B25BA262937CCFD00703F48 /* EventosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA252937CCFD00703F48 /* EventosViewModel.swift */; };
+		4B25BA282937CE5F00703F48 /* EventoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA272937CE5F00703F48 /* EventoDetailView.swift */; };
+		4B25BA2A2939233B00703F48 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA292939233B00703F48 /* WebService.swift */; };
 		4B4C4427291AD46600F5A437 /* MarkPro-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B4C4426291AD45500F5A437 /* MarkPro-Book.otf */; };
 		4B4C4429291ADCE300F5A437 /* ObrasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C4428291ADCE300F5A437 /* ObrasModel.swift */; };
 		4B4C442D291AE09800F5A437 /* ObrasDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C442C291AE09800F5A437 /* ObrasDetailView.swift */; };
 		4B4C442F291AF31F00F5A437 /* ObrasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C442E291AF31F00F5A437 /* ObrasViewModel.swift */; };
 		4B4C4431291AF61100F5A437 /* ObrasItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C4430291AF61100F5A437 /* ObrasItemView.swift */; };
 		4B748B8D2923FF080013E28D /* ExposModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B8C2923FF080013E28D /* ExposModel.swift */; };
-		4B748B8F292400960013E28D /* ExposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B8E292400960013E28D /* ExposViewModel.swift */; };
+		4B748B8F292400960013E28D /* ExpoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B8E292400960013E28D /* ExpoViewModel.swift */; };
 		4B748B912924012F0013E28D /* ExposDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B902924012F0013E28D /* ExposDetailView.swift */; };
 		4B748B93292405130013E28D /* ExposItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B92292405130013E28D /* ExposItemView.swift */; };
 		D8E1493B292E96B700319099 /* EventosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1493A292E96B700319099 /* EventosModel.swift */; };
@@ -21,7 +27,6 @@
 		D8E1493F292E96D900319099 /* EventosDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1493E292E96D900319099 /* EventosDetailView.swift */; };
 		D8E14941292E96E600319099 /* EventosItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E14940292E96E600319099 /* EventosItemView.swift */; };
 		4BB74BA82927FFB6005A7173 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB74BA72927FFB6005A7173 /* WebView.swift */; };
-		4BD82362293143FA009C243E /* ObrasCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD82361293143FA009C243E /* ObrasCollectionView.swift */; };
 		FB1F7F532923FF3A00AAD08D /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F522923FF3A00AAD08D /* gramophone.usdz */; };
 		FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F7F542923FFC600AAD08D /* ARViewController.swift */; };
 		FB1F7F592924199900AAD08D /* pirinola.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F582924199900AAD08D /* pirinola.usdz */; };
@@ -39,13 +44,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B25BA212936A7A900703F48 /* ServerErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorView.swift; sourceTree = "<group>"; };
+		4B25BA232937CC8700703F48 /* Eventos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventos.swift; sourceTree = "<group>"; };
+		4B25BA252937CCFD00703F48 /* EventosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosViewModel.swift; sourceTree = "<group>"; };
+		4B25BA272937CE5F00703F48 /* EventoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoDetailView.swift; sourceTree = "<group>"; };
+		4B25BA292939233B00703F48 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		4B4C4426291AD45500F5A437 /* MarkPro-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Book.otf"; sourceTree = "<group>"; };
 		4B4C4428291ADCE300F5A437 /* ObrasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasModel.swift; sourceTree = "<group>"; };
 		4B4C442C291AE09800F5A437 /* ObrasDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasDetailView.swift; sourceTree = "<group>"; };
 		4B4C442E291AF31F00F5A437 /* ObrasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasViewModel.swift; sourceTree = "<group>"; };
 		4B4C4430291AF61100F5A437 /* ObrasItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasItemView.swift; sourceTree = "<group>"; };
 		4B748B8C2923FF080013E28D /* ExposModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposModel.swift; sourceTree = "<group>"; };
-		4B748B8E292400960013E28D /* ExposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposViewModel.swift; sourceTree = "<group>"; };
+		4B748B8E292400960013E28D /* ExpoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoViewModel.swift; sourceTree = "<group>"; };
 		4B748B902924012F0013E28D /* ExposDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposDetailView.swift; sourceTree = "<group>"; };
 		4B748B92292405130013E28D /* ExposItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposItemView.swift; sourceTree = "<group>"; };
 		D8E1493A292E96B700319099 /* EventosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosModel.swift; sourceTree = "<group>"; };
@@ -53,7 +63,6 @@
 		D8E1493E292E96D900319099 /* EventosDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosDetailView.swift; sourceTree = "<group>"; };
 		D8E14940292E96E600319099 /* EventosItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosItemView.swift; sourceTree = "<group>"; };
 		4BB74BA72927FFB6005A7173 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		4BD82361293143FA009C243E /* ObrasCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasCollectionView.swift; sourceTree = "<group>"; };
 		FB1F7F522923FF3A00AAD08D /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		FB1F7F542923FFC600AAD08D /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		FB1F7F582924199900AAD08D /* pirinola.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pirinola.usdz; sourceTree = "<group>"; };
@@ -75,13 +84,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD23DE7292E8C1300C40025 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B25BA142936A1AD00703F48 /* Eventos */ = {
+			isa = PBXGroup;
+			children = (
+				4B25BA232937CC8700703F48 /* Eventos.swift */,
+				4B25BA252937CCFD00703F48 /* EventosViewModel.swift */,
+				4B25BA272937CE5F00703F48 /* EventoDetailView.swift */,
+			);
+			path = Eventos;
+			sourceTree = "<group>";
+		};
+		4B25BA152936A1C800703F48 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				4B25BA292939233B00703F48 /* WebService.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		4B4C4425291AD44800F5A437 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +123,6 @@
 				4B4C442E291AF31F00F5A437 /* ObrasViewModel.swift */,
 				4B4C442C291AE09800F5A437 /* ObrasDetailView.swift */,
 				4B4C4430291AF61100F5A437 /* ObrasItemView.swift */,
-				4BD82361293143FA009C243E /* ObrasCollectionView.swift */,
 			);
 			path = Obras;
 			sourceTree = "<group>";
@@ -106,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				4B748B8C2923FF080013E28D /* ExposModel.swift */,
-				4B748B8E292400960013E28D /* ExposViewModel.swift */,
+				4B748B8E292400960013E28D /* ExpoViewModel.swift */,
 				4B748B902924012F0013E28D /* ExposDetailView.swift */,
 				4B748B92292405130013E28D /* ExposItemView.swift */,
 			);
@@ -146,6 +171,7 @@
 			children = (
 				FB1F7F582924199900AAD08D /* pirinola.usdz */,
 				FB1F7F522923FF3A00AAD08D /* gramophone.usdz */,
+				4B25BA212936A7A900703F48 /* ServerErrorView.swift */,
 				FB66E14728FF2260000FB321 /* ScanView.swift */,
 				FB1F7F542923FFC600AAD08D /* ARViewController.swift */,
 				FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */,
@@ -155,10 +181,10 @@
 				FBCC02D228F734BF00A9EA9D /* ExposView.swift */,
 				FBCC02D428F734C700A9EA9D /* EventosView.swift */,
 				FBCC02CE28F7340100A9EA9D /* ActividadView.swift */,
-				D8E14939292E969500319099 /* Eventos */,
 				4B748B8B2923FEF20013E28D /* Expos */,
 				4B4C442B291ADE9600F5A437 /* Obras */,
 				FBCC02C428F7302000A9EA9D /* Assets.xcassets */,
+				4B25BA152936A1C800703F48 /* Web */,
 				4B4C4425291AD44800F5A437 /* Fonts */,
 				FBCC02C628F7302000A9EA9D /* Preview Content */,
 			);
@@ -189,9 +215,6 @@
 			dependencies = (
 			);
 			name = AppMarcoReto;
-			packageProductDependencies = (
-				FBD23DE6292E8C1300C40025 /* FocusEntity */,
-			);
 			productName = AppMarcoReto;
 			productReference = FBCC02BD28F7301E00A9EA9D /* AppMarcoReto.app */;
 			productType = "com.apple.product-type.application";
@@ -220,9 +243,6 @@
 				Base,
 			);
 			mainGroup = FBCC02B428F7301E00A9EA9D;
-			packageReferences = (
-				FBD23DE5292E8C1300C40025 /* XCRemoteSwiftPackageReference "FocusEntity" */,
-			);
 			productRefGroup = FBCC02BE28F7301E00A9EA9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,28 +273,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB832C5D290065AB00F34DB8 /* ColectionView.swift in Sources */,
+				4B25BA222936A7A900703F48 /* ServerErrorView.swift in Sources */,
 				FB66E14828FF2260000FB321 /* ScanView.swift in Sources */,
 				D8E1493B292E96B700319099 /* EventosModel.swift in Sources */,
 				FBCC02C328F7301E00A9EA9D /* ContentView.swift in Sources */,
-				4B748B8F292400960013E28D /* ExposViewModel.swift in Sources */,
-				D8E1493F292E96D900319099 /* EventosDetailView.swift in Sources */,
+				4B748B8F292400960013E28D /* ExpoViewModel.swift in Sources */,
 				4B4C442F291AF31F00F5A437 /* ObrasViewModel.swift in Sources */,
+				4B25BA242937CC8700703F48 /* Eventos.swift in Sources */,
 				4B748B8D2923FF080013E28D /* ExposModel.swift in Sources */,
-				D8E14941292E96E600319099 /* EventosItemView.swift in Sources */,
+				4B25BA282937CE5F00703F48 /* EventoDetailView.swift in Sources */,
 				4B748B912924012F0013E28D /* ExposDetailView.swift in Sources */,
 				FBCC02D128F734A900A9EA9D /* HomeView.swift in Sources */,
 				4B4C4429291ADCE300F5A437 /* ObrasModel.swift in Sources */,
 				FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */,
-				4BD82362293143FA009C243E /* ObrasCollectionView.swift in Sources */,
 				FBCC02CF28F7340100A9EA9D /* ActividadView.swift in Sources */,
 				FBCC02D528F734C700A9EA9D /* EventosView.swift in Sources */,
 				4B4C4431291AF61100F5A437 /* ObrasItemView.swift in Sources */,
 				4B4C442D291AE09800F5A437 /* ObrasDetailView.swift in Sources */,
 				D8E1493D292E96C500319099 /* EventosViewModel.swift in Sources */,
 				FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */,
+				4B25BA2A2939233B00703F48 /* WebService.swift in Sources */,
 				4BB74BA82927FFB6005A7173 /* WebView.swift in Sources */,
 				FBCC02D328F734BF00A9EA9D /* ExposView.swift in Sources */,
 				4B748B93292405130013E28D /* ExposItemView.swift in Sources */,
+				4B25BA262937CCFD00703F48 /* EventosViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +440,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoRetoNov23;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Equipo2.AppMarcoReto2-221201";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -449,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Equipo2.AppMarcoRetoNov23;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Equipo2.AppMarcoReto2-221201";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -479,6 +501,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B25BA1E2936A70200703F48 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B25BA1F2936A70200703F48 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B25BA1E2936A70200703F48 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		FBD23DE5292E8C1300C40025 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
