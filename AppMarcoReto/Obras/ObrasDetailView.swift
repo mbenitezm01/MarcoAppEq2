@@ -67,7 +67,7 @@ struct ObrasDetailView: View {
                     
                     HStack{
                         if obra.modelName != nil{
-                            NavigationLink(destination: ScanView(modelName: obra.modelName!), label:{Text("3D")})
+                            NavigationLink(destination: ScanView(modelName: obra.modelName!).toolbar(.hidden, for: .tabBar), label:{Text("3D")})
                         }
                         //
                         //                            .background(.brown)
