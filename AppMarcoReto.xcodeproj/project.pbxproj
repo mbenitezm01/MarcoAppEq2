@@ -23,9 +23,10 @@
 		4B748B912924012F0013E28D /* ExposDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B902924012F0013E28D /* ExposDetailView.swift */; };
 		4B748B93292405130013E28D /* ExposItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B748B92292405130013E28D /* ExposItemView.swift */; };
 		4BB74BA82927FFB6005A7173 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB74BA72927FFB6005A7173 /* WebView.swift */; };
-		FB1F7F532923FF3A00AAD08D /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F522923FF3A00AAD08D /* gramophone.usdz */; };
+		FB110BD62939495F00967B06 /* volcanica.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB110BD52939495F00967B06 /* volcanica.usdz */; };
+		FB110BD82939496F00967B06 /* casino.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB110BD72939496F00967B06 /* casino.usdz */; };
+		FB110BDB293949D000967B06 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = FB110BDA293949D000967B06 /* FocusEntity */; };
 		FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F7F542923FFC600AAD08D /* ARViewController.swift */; };
-		FB1F7F592924199900AAD08D /* pirinola.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB1F7F582924199900AAD08D /* pirinola.usdz */; };
 		FB66E14828FF2260000FB321 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66E14728FF2260000FB321 /* ScanView.swift */; };
 		FB832C5D290065AB00F34DB8 /* ColectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB832C5C290065AB00F34DB8 /* ColectionView.swift */; };
 		FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */; };
@@ -54,9 +55,9 @@
 		4B748B902924012F0013E28D /* ExposDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposDetailView.swift; sourceTree = "<group>"; };
 		4B748B92292405130013E28D /* ExposItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposItemView.swift; sourceTree = "<group>"; };
 		4BB74BA72927FFB6005A7173 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		FB1F7F522923FF3A00AAD08D /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
+		FB110BD52939495F00967B06 /* volcanica.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = volcanica.usdz; sourceTree = "<group>"; };
+		FB110BD72939496F00967B06 /* casino.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = casino.usdz; sourceTree = "<group>"; };
 		FB1F7F542923FFC600AAD08D /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		FB1F7F582924199900AAD08D /* pirinola.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pirinola.usdz; sourceTree = "<group>"; };
 		FB66E14728FF2260000FB321 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		FB832C5C290065AB00F34DB8 /* ColectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColectionView.swift; sourceTree = "<group>"; };
 		FBCC02BD28F7301E00A9EA9D /* AppMarcoReto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMarcoReto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB110BDB293949D000967B06 /* FocusEntity in Frameworks */,
 				4B25BA202936A70200703F48 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,8 +152,8 @@
 		FBCC02BF28F7301E00A9EA9D /* AppMarcoReto */ = {
 			isa = PBXGroup;
 			children = (
-				FB1F7F582924199900AAD08D /* pirinola.usdz */,
-				FB1F7F522923FF3A00AAD08D /* gramophone.usdz */,
+				FB110BD72939496F00967B06 /* casino.usdz */,
+				FB110BD52939495F00967B06 /* volcanica.usdz */,
 				4B25BA212936A7A900703F48 /* ServerErrorView.swift */,
 				FB66E14728FF2260000FB321 /* ScanView.swift */,
 				FB1F7F542923FFC600AAD08D /* ARViewController.swift */,
@@ -199,6 +201,7 @@
 			name = AppMarcoReto;
 			packageProductDependencies = (
 				4B25BA1F2936A70200703F48 /* SDWebImageSwiftUI */,
+				FB110BDA293949D000967B06 /* FocusEntity */,
 			);
 			productName = AppMarcoReto;
 			productReference = FBCC02BD28F7301E00A9EA9D /* AppMarcoReto.app */;
@@ -230,6 +233,7 @@
 			mainGroup = FBCC02B428F7301E00A9EA9D;
 			packageReferences = (
 				4B25BA1E2936A70200703F48 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				FB110BD9293949D000967B06 /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = FBCC02BE28F7301E00A9EA9D /* Products */;
 			projectDirPath = "";
@@ -247,9 +251,9 @@
 			files = (
 				4B4C4427291AD46600F5A437 /* MarkPro-Book.otf in Resources */,
 				FBCC02C828F7302000A9EA9D /* Preview Assets.xcassets in Resources */,
-				FB1F7F532923FF3A00AAD08D /* gramophone.usdz in Resources */,
-				FB1F7F592924199900AAD08D /* pirinola.usdz in Resources */,
+				FB110BD62939495F00967B06 /* volcanica.usdz in Resources */,
 				FBCC02C528F7302000A9EA9D /* Assets.xcassets in Resources */,
+				FB110BD82939496F00967B06 /* casino.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +501,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		FB110BD9293949D000967B06 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -504,6 +516,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4B25BA1E2936A70200703F48 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		FB110BDA293949D000967B06 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB110BD9293949D000967B06 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
