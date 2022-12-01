@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B25BA1B2936A27A00703F48 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA1A2936A27A00703F48 /* WebService.swift */; };
 		4B25BA202936A70200703F48 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4B25BA1F2936A70200703F48 /* SDWebImageSwiftUI */; };
 		4B25BA222936A7A900703F48 /* ServerErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA212936A7A900703F48 /* ServerErrorView.swift */; };
 		4B25BA242937CC8700703F48 /* Eventos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA232937CC8700703F48 /* Eventos.swift */; };
 		4B25BA262937CCFD00703F48 /* EventosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA252937CCFD00703F48 /* EventosViewModel.swift */; };
 		4B25BA282937CE5F00703F48 /* EventoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA272937CE5F00703F48 /* EventoDetailView.swift */; };
+		4B25BA2A2939233B00703F48 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B25BA292939233B00703F48 /* WebService.swift */; };
 		4B4C4427291AD46600F5A437 /* MarkPro-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B4C4426291AD45500F5A437 /* MarkPro-Book.otf */; };
 		4B4C4429291ADCE300F5A437 /* ObrasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C4428291ADCE300F5A437 /* ObrasModel.swift */; };
 		4B4C442D291AE09800F5A437 /* ObrasDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C442C291AE09800F5A437 /* ObrasDetailView.swift */; };
@@ -39,11 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B25BA1A2936A27A00703F48 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebService.swift; path = ../../../../../../../../.Trash/WebService.swift; sourceTree = "<group>"; };
 		4B25BA212936A7A900703F48 /* ServerErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorView.swift; sourceTree = "<group>"; };
 		4B25BA232937CC8700703F48 /* Eventos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventos.swift; sourceTree = "<group>"; };
 		4B25BA252937CCFD00703F48 /* EventosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosViewModel.swift; sourceTree = "<group>"; };
 		4B25BA272937CE5F00703F48 /* EventoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventoDetailView.swift; sourceTree = "<group>"; };
+		4B25BA292939233B00703F48 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		4B4C4426291AD45500F5A437 /* MarkPro-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Book.otf"; sourceTree = "<group>"; };
 		4B4C4428291ADCE300F5A437 /* ObrasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasModel.swift; sourceTree = "<group>"; };
 		4B4C442C291AE09800F5A437 /* ObrasDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObrasDetailView.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		4B25BA152936A1C800703F48 /* Web */ = {
 			isa = PBXGroup;
 			children = (
-				4B25BA1A2936A27A00703F48 /* WebService.swift */,
+				4B25BA292939233B00703F48 /* WebService.swift */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -278,9 +278,9 @@
 				4B4C4431291AF61100F5A437 /* ObrasItemView.swift in Sources */,
 				4B4C442D291AE09800F5A437 /* ObrasDetailView.swift in Sources */,
 				FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */,
+				4B25BA2A2939233B00703F48 /* WebService.swift in Sources */,
 				4BB74BA82927FFB6005A7173 /* WebView.swift in Sources */,
 				FBCC02D328F734BF00A9EA9D /* ExposView.swift in Sources */,
-				4B25BA1B2936A27A00703F48 /* WebService.swift in Sources */,
 				4B748B93292405130013E28D /* ExposItemView.swift in Sources */,
 				4B25BA262937CCFD00703F48 /* EventosViewModel.swift in Sources */,
 			);
