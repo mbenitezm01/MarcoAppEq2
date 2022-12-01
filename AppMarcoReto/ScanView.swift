@@ -24,8 +24,15 @@ struct ScanView: View {
                         .background(Material.bar)
                 }
                 .ignoresSafeArea(.all, edges: .top)
-            
-            Toggle("", isOn: $toggleState)
+            VStack{
+                Spacer()
+                HStack{
+                    Toggle("Mover Modelo", isOn: $toggleState)
+                        .toggleStyle(.button)
+                        .padding()
+                    Spacer()
+                }
+            }
             
         }
     }

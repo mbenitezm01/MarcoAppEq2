@@ -1,0 +1,37 @@
+[
+  {
+    "libraryIdentifier" : "42b3dc53636c3fbad8ca5d868faf95e0",
+    "format" : "model",
+    "displayName" : "Diamante.usdz"
+  },
+  {
+    "libraryIdentifier" : "d668bdcb6a0ec75485b8ce1e2d887673",
+    "format" : "model",
+    "displayName" : "Dodecaedro.usdz"
+  },
+  {
+    "libraryIdentifier" : "4bf9b268e5c00a00aaab3f43da657b75",
+    "format" : "model",
+    "displayName" : "PALOMA.usdz"
+  },
+  {
+    "libraryIdentifier" : "551d1232b71abc24693aa6db3c17c870",
+    "format" : "model",
+    "displayName" : "PicoMirandola.usdz"
+  },
+  {
+    "libraryIdentifier" : "94ee1ac71cd6248b084196ac7ddbc3a4",
+    "format" : "model",
+    "displayName" : "Piramide.usdz"
+  },
+  {
+    "libraryIdentifier" : "d6e3d88997b15084ebba827185bb1dca",
+    "format" : "model",
+    "displayName" : "Pirinola.usdz"
+  },
+  {
+    "libraryIdentifier" : "26efd79a02b479ef9dc884229fd9bf36",
+    "format" : "image",
+    "displayName" : "ELS_MM_Marzo-24.jpeg"
+  }
+]
