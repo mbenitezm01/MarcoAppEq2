@@ -16,12 +16,17 @@ struct ContentView: View {
                     Text("Home")
                     Image(systemName: "house.fill")
                 }
-            ExposView()
-                .tabItem{
-                    Text("Expos")
-                    Image(systemName: "film")
-                }
-            EventosView()
+            NavigationView{
+                ExposView()
+                    }
+            .tabItem{
+                Text("Expos")
+                Image(systemName: "film")
+            }
+            
+            NavigationView{
+                EventosView()
+            }
                 .tabItem{
                     Text("Eventos")
                     Image(systemName: "calendar")

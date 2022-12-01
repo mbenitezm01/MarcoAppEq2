@@ -50,6 +50,7 @@ struct ColectionView: View {
                 }
                 
                 
+                
             }//VStack
         }
         //NavigationView
