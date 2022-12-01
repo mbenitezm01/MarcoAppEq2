@@ -22,6 +22,7 @@
 		D8E1493D292E96C500319099 /* EventosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1493C292E96C500319099 /* EventosViewModel.swift */; };
 		D8E1493F292E96D900319099 /* EventosDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1493E292E96D900319099 /* EventosDetailView.swift */; };
 		D8E14941292E96E600319099 /* EventosItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E14940292E96E600319099 /* EventosItemView.swift */; };
+		FB110BD1293947C500967B06 /* Eventos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB110BD0293947C500967B06 /* Eventos.swift */; };
 		FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F7F542923FFC600AAD08D /* ARViewController.swift */; };
 		FB66D11829392EC20002EB6D /* volcanica.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB66D11729392EC20002EB6D /* volcanica.usdz */; };
 		FB66D11C293933180002EB6D /* casino.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB66D11B293933180002EB6D /* casino.usdz */; };
@@ -54,6 +55,7 @@
 		D8E1493C292E96C500319099 /* EventosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosViewModel.swift; sourceTree = "<group>"; };
 		D8E1493E292E96D900319099 /* EventosDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosDetailView.swift; sourceTree = "<group>"; };
 		D8E14940292E96E600319099 /* EventosItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosItemView.swift; sourceTree = "<group>"; };
+		FB110BD0293947C500967B06 /* Eventos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eventos.swift; sourceTree = "<group>"; };
 		FB1F7F542923FFC600AAD08D /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		FB66D11729392EC20002EB6D /* volcanica.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = volcanica.usdz; sourceTree = "<group>"; };
 		FB66D11B293933180002EB6D /* casino.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = casino.usdz; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		D8E14939292E969500319099 /* Eventos */ = {
 			isa = PBXGroup;
 			children = (
+				FB110BD0293947C500967B06 /* Eventos.swift */,
 				D8E1493A292E96B700319099 /* EventosModel.swift */,
 				D8E1493C292E96C500319099 /* EventosViewModel.swift */,
 				D8E1493E292E96D900319099 /* EventosDetailView.swift */,
@@ -272,6 +275,7 @@
 				4B4C442D291AE09800F5A437 /* ObrasDetailView.swift in Sources */,
 				D8E1493D292E96C500319099 /* EventosViewModel.swift in Sources */,
 				FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */,
+				FB110BD1293947C500967B06 /* Eventos.swift in Sources */,
 				4BB74BA82927FFB6005A7173 /* WebView.swift in Sources */,
 				FBCC02D328F734BF00A9EA9D /* ExposView.swift in Sources */,
 				4B748B93292405130013E28D /* ExposItemView.swift in Sources */,
