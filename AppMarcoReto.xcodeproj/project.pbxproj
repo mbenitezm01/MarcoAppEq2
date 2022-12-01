@@ -24,7 +24,7 @@
 		D8E14941292E96E600319099 /* EventosItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E14940292E96E600319099 /* EventosItemView.swift */; };
 		FB1F7F552923FFC600AAD08D /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F7F542923FFC600AAD08D /* ARViewController.swift */; };
 		FB66D11829392EC20002EB6D /* volcanica.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB66D11729392EC20002EB6D /* volcanica.usdz */; };
-		FB66D11A2939314A0002EB6D /* casino.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = FB66D1192939314A0002EB6D /* casino.rcproject */; };
+		FB66D11C293933180002EB6D /* casino.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB66D11B293933180002EB6D /* casino.usdz */; };
 		FB66E14828FF2260000FB321 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66E14728FF2260000FB321 /* ScanView.swift */; };
 		FB832C5D290065AB00F34DB8 /* ColectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB832C5C290065AB00F34DB8 /* ColectionView.swift */; };
 		FBCC02C128F7301E00A9EA9D /* AppMarcoRetoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */; };
@@ -56,7 +56,7 @@
 		D8E14940292E96E600319099 /* EventosItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventosItemView.swift; sourceTree = "<group>"; };
 		FB1F7F542923FFC600AAD08D /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		FB66D11729392EC20002EB6D /* volcanica.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = volcanica.usdz; sourceTree = "<group>"; };
-		FB66D1192939314A0002EB6D /* casino.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = casino.rcproject; sourceTree = "<group>"; };
+		FB66D11B293933180002EB6D /* casino.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = casino.usdz; sourceTree = "<group>"; };
 		FB66E14728FF2260000FB321 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		FB832C5C290065AB00F34DB8 /* ColectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColectionView.swift; sourceTree = "<group>"; };
 		FBCC02BD28F7301E00A9EA9D /* AppMarcoReto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMarcoReto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				FB66D11729392EC20002EB6D /* volcanica.usdz */,
-				FB66D1192939314A0002EB6D /* casino.rcproject */,
+				FB66D11B293933180002EB6D /* casino.usdz */,
 				FB66E14728FF2260000FB321 /* ScanView.swift */,
 				FB1F7F542923FFC600AAD08D /* ARViewController.swift */,
 				FBCC02C028F7301E00A9EA9D /* AppMarcoRetoApp.swift */,
@@ -241,6 +241,7 @@
 				FBCC02C828F7302000A9EA9D /* Preview Assets.xcassets in Resources */,
 				FB66D11829392EC20002EB6D /* volcanica.usdz in Resources */,
 				FBCC02C528F7302000A9EA9D /* Assets.xcassets in Resources */,
+				FB66D11C293933180002EB6D /* casino.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +259,6 @@
 				4B748B8F292400960013E28D /* ExposViewModel.swift in Sources */,
 				D8E1493F292E96D900319099 /* EventosDetailView.swift in Sources */,
 				4B4C442F291AF31F00F5A437 /* ObrasViewModel.swift in Sources */,
-				FB66D11A2939314A0002EB6D /* casino.rcproject in Sources */,
 				4B748B8D2923FF080013E28D /* ExposModel.swift in Sources */,
 				D8E14941292E96E600319099 /* EventosItemView.swift in Sources */,
 				4B748B912924012F0013E28D /* ExposDetailView.swift in Sources */,
